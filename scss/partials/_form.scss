@@ -1,0 +1,124 @@
+@import 'base';
+
+
+.roundedborder {
+  border-radius: .5em;
+  border: 2px solid $border-color;
+}
+
+
+form { 
+  font-size: $base-font-size; 
+  margin: 1em auto; 
+  @extend .roundedborder; 
+  border-radius: 0;
+  padding: 1em;
+  width:90%;
+}
+
+input, select{
+	outline:none;
+}
+
+label {
+	padding:0 .5em 0 .5em;
+}
+
+
+/* Text Input */
+input[type='text'] {
+  @extend .roundedborder;
+  background-color: #fff;
+  color: #000;
+  font-size:1em;
+  margin:.2em 0 1em;
+  padding: .25em;
+  width:75%;
+}
+
+
+/* Radio Buttons */
+fieldset {
+  @extend .roundedborder;
+  background-color: #fff;
+  width: 90%;
+  margin-bottom:1em;
+  padding:.5em .5em;
+}
+
+input[type='radio'] {
+  appearance:none;
+  border: solid .1em;;
+  border-radius: 2em;
+  background-color: #fff;
+  color:#fff;
+  cursor:pointer;
+  height:2.5em;
+  width: 2.5em;
+  margin-top:0;
+  vertical-align:text-top;
+}
+
+
+/* Dropdown Box */
+.styled-select {
+  display:inline-block;
+  @extend .roundedborder;
+  background-color: #fff;
+  color: #000;
+  cursor:pointer;
+  
+  margin-bottom:1.5em;
+  padding:.25em 0;
+  position:relative;
+ 
+}
+
+
+select {
+	display:inline-block;
+    @extend .roundedborder;
+    background-color: transparent;
+    font-size:$base-font-size;
+    border: solid 1px #fff;
+    border-width: 0 0 0 1px;
+    cursor:pointer;
+    color: #000;
+    display:inline-block;
+    font-size:1em;
+    margin:0; padding:0 2em 0 1em;
+    width:15em;
+}
+
+
+/* Checkbox */
+input[type='checkbox'] {
+  @extend .roundedborder;
+  background-color: #fff;
+  cursor:pointer;
+  font-size:1em;
+  padding: .25em;
+  height:1em; width:1em;
+  vertical-align: text-bottom;
+}
+
+
+/* Submit Button */
+input[type='submit'] {
+  @extend .roundedborder;
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor:pointer;
+  color: #000;
+  float:right;
+  font-size:1.25em;
+  padding: .25em 1em;
+  margin-bottom: 1em;
+
+}
+
+input[type='submit']:hover{
+	background-color: #F0EEEF;
+	box-shadow: 2px 2px 2px #888888;
+
+}

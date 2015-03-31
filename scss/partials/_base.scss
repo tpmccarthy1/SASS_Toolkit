@@ -1,0 +1,137 @@
+
+//Linear Gradient mixin
+
+@mixin linear-gradient($from-color, $to-color){
+	background-color: $from-color;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from-color), to($to-color));
+	background-image: -webkit-linear-gradient(top, $from-color, $to-color);
+	background-image: linear-gradient(top, $from-color, $to-color);
+}
+
+
+//Common Variables
+
+$base-font-size: 1em;
+$left-padding: 5px;
+
+
+//Color Variables
+
+$bg: #F0EEEF;
+$wrapper-bg: #fff;
+
+//Grid Variables
+
+$grid-padding: 10px 0px 10px 0px;
+$grid-margin: 0 auto;
+$border-color: #000;
+$border-thick: 2px;
+$border-style: solid;
+$box-margin: 0 0 0 10px; 
+
+//Nav Variables
+
+$nav-font-size: 1.25em;
+$nav-padding: 10px 0 5px 0;
+$nav-li-padding: 5px;
+$nav-margin: 10px;
+
+//Margin & Padding Reset
+
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+//Clear
+
+.clear {clear:both;}
+
+//link behaviors
+
+a:link{
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:visited{
+  color: #000;
+}
+
+//arrows
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #000;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #000;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid #000;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;	
+	border-right:20px solid #000; 
+}
+
+
+
+//Body
+
+body{
+	background-color: $bg;
+	font-family: helvetica;
+	font-size: $base-font-size;
+
+		h1{
+			font-size: $base-font-size*2;
+			padding-left: $left-padding;
+			padding: 5px  5px 5px;
+		}
+		h2{
+			@extend h1;
+			font-size: $base-font-size*1.5;
+		}
+		h3{
+			@extend h1;
+			font-size: $base-font-size*1.25;
+			
+		}
+}
+
+//Wrapper
+
+.wrapper{
+	background-color: $wrapper-bg;
+	margin: 0 auto 0;
+	width: 90%;
+}
+
+
+
+

@@ -1,0 +1,59 @@
+@import 'base';
+
+
+.column-grid{
+	width: 100%;
+	background-color: $wrapper-bg;
+		
+		@media all and (min-width: 481px){
+		padding: $grid-padding;
+		width: 100%;
+		margin: 0 auto;
+		float: left;
+		background-color: $wrapper-bg;
+		
+		}
+}
+
+
+.box{
+	width: 100%;
+	float: left;
+	border: $border-color $border-style $border-thick;
+	@include linear-gradient(#F0EEEF, #fff);
+
+		@media all and (min-width: 481px){
+		display: block;
+		width: 31%;
+		float: left;
+		margin: $box-margin;
+			
+		}
+
+		p{
+			padding: 3px;
+		}
+}
+
+
+// Form box with sidebar
+
+.form-box{
+	@extend .box;
+	width: 63.3%;
+	@include linear-gradient(#F0EEEF, #fff);
+
+
+}
+
+.sidebar{
+	@extend .box;
+	width: 31%;
+	@include linear-gradient(#F0EEEF, #fff);
+	div{
+		float: left;
+		margin: 1em;
+	}
+
+}
+

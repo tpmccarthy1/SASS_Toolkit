@@ -1,0 +1,24 @@
+@import 'base';
+
+nav{
+	padding: $nav-padding;
+
+	ul{
+		display: table;
+		height: 2em;
+		width: 100%;
+		background-color: inherit;
+		font-size: $nav-font-size;
+		padding: $nav-padding;
+
+		}
+
+	li{
+		display: table-cell;
+		width: 20%;
+		text-align: center;
+		background: inherit;
+		white-space: nowrap;
+}
+
+}
