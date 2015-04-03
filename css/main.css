@@ -50,34 +50,42 @@ body {
   background-color: #F0EEEF;
   font-family: helvetica;
   font-size: 1em; }
-  body h1, body h2, body h3 {
-    font-size: 2em;
-    padding-left: 5px;
-    padding: 5px  5px 5px; }
+  body h1 {
+    font-size: 3em; }
   body h2 {
-    font-size: 1.5em; }
+    font-size: 2em; }
   body h3 {
-    font-size: 1.25em; }
+    font-size: 1.5em; }
 
 .wrapper {
-  background-color: #fff;
+  background: linear-gradient(#F0EEEF, #fff);
   margin: 0 auto 0;
-  width: 90%; }
+  width: 100%; }
+  @media all and (min-width: 481px) {
+    .wrapper {
+      background-color: #fff;
+      margin: 0 auto 0;
+      width: 98%; } }
+
+.banner {
+  margin: 1em 0 1em 0;
+  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 25.000em; }
 
 nav {
-  padding: 10px 0 5px 0; }
+  padding: 1em 0 0.5em 0; }
   nav ul {
     display: table;
-    height: 2em;
+    line-height: 1em;
     width: 100%;
-    background-color: inherit;
     font-size: 1.25em;
-    padding: 10px 0 5px 0; }
+    padding: 1em 0 0.5em 0; }
   nav li {
     display: table-cell;
-    width: 20%;
+    width: 16.666667%;
     text-align: center;
-    background: inherit;
     white-space: nowrap; }
 
 * {
@@ -132,57 +140,68 @@ body {
   background-color: #F0EEEF;
   font-family: helvetica;
   font-size: 1em; }
-  body h1, body h2, body h3 {
-    font-size: 2em;
-    padding-left: 5px;
-    padding: 5px  5px 5px; }
+  body h1 {
+    font-size: 3em; }
   body h2 {
-    font-size: 1.5em; }
+    font-size: 2em; }
   body h3 {
-    font-size: 1.25em; }
+    font-size: 1.5em; }
 
 .wrapper {
-  background-color: #fff;
+  background: linear-gradient(#F0EEEF, #fff);
   margin: 0 auto 0;
-  width: 90%; }
-
-.column-grid {
-  width: 100%;
-  background-color: #fff; }
+  width: 100%; }
   @media all and (min-width: 481px) {
-    .column-grid {
-      padding: 10px 0px 10px 0px;
-      width: 100%;
-      margin: 0 auto;
-      float: left;
-      background-color: #fff; } }
+    .wrapper {
+      background-color: #fff;
+      margin: 0 auto 0;
+      width: 98%; } }
+
+.banner {
+  margin: 1em 0 1em 0;
+  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 25.000em; }
+
+.grid-container {
+  width: 100%; }
+  @media all and (min-width: 481px) {
+    .grid-container {
+      padding: 0;
+      width: 95%;
+      margin: 0 auto; } }
 
 .box, .form-box, .sidebar {
   width: 100%;
   float: left;
-  border: #000 solid 2px;
+  border-bottom: #000 solid 0px;
+  background-color: #F0EEEF;
+  margin-bottom: .5em; }
+  .box p, .form-box p, .sidebar p {
+    padding: 1em; }
+  @media all and (min-width: 481px) {
+    .box, .form-box, .sidebar {
+      display: block;
+      width: 30%;
+      float: left;
+      margin: 1em 0 0 1em;
+      border: #000 solid 0px; } }
+  .box p, .form-box p, .sidebar p {
+    padding: .5em; }
+
+.form-box {
+  width: 100%;
   background-color: #F0EEEF;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F0EEEF), to(#fff));
   background-image: -webkit-linear-gradient(top, #F0EEEF, #fff);
   background-image: linear-gradient(top, #F0EEEF, #fff); }
   @media all and (min-width: 481px) {
-    .box, .form-box, .sidebar {
-      display: block;
-      width: 31%;
-      float: left;
-      margin: 0 0 0 10px; } }
-  .box p, .form-box p, .sidebar p {
-    padding: 3px; }
-
-.form-box {
-  width: 63.3%;
-  background-color: #F0EEEF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#F0EEEF), to(#fff));
-  background-image: -webkit-linear-gradient(top, #F0EEEF, #fff);
-  background-image: linear-gradient(top, #F0EEEF, #fff); }
+    .form-box {
+      width: 61.5%; } }
 
 .sidebar {
-  width: 31%;
+  width: 100%;
   background-color: #F0EEEF;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F0EEEF), to(#fff));
   background-image: -webkit-linear-gradient(top, #F0EEEF, #fff);
@@ -190,6 +209,9 @@ body {
   .sidebar div {
     float: left;
     margin: 1em; }
+  @media all and (min-width: 481px) {
+    .sidebar {
+      width: 30.1%; } }
 
 * {
   margin: 0;
@@ -243,21 +265,31 @@ body {
   background-color: #F0EEEF;
   font-family: helvetica;
   font-size: 1em; }
-  body h1, body h2, body h3 {
-    font-size: 2em;
-    padding-left: 5px;
-    padding: 5px  5px 5px; }
+  body h1 {
+    font-size: 3em; }
   body h2 {
-    font-size: 1.5em; }
+    font-size: 2em; }
   body h3 {
-    font-size: 1.25em; }
+    font-size: 1.5em; }
 
 .wrapper {
-  background-color: #fff;
+  background: linear-gradient(#F0EEEF, #fff);
   margin: 0 auto 0;
-  width: 90%; }
+  width: 100%; }
+  @media all and (min-width: 481px) {
+    .wrapper {
+      background-color: #fff;
+      margin: 0 auto 0;
+      width: 98%; } }
 
-.roundedborder, form, input[type='text'], fieldset, .styled-select, select, input[type='checkbox'], input[type='submit'] {
+.banner {
+  margin: 1em 0 1em 0;
+  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 25.000em; }
+
+.rounded-border, form, input[type='text'], fieldset, .styled-select, select, input[type='checkbox'] {
   border-radius: .5em;
   border: 2px solid #000; }
 
@@ -338,6 +370,7 @@ input[type='checkbox'] {
 
 /* Submit Button */
 input[type='submit'] {
+  width: 10em;
   border: 2px solid #000;
   background-color: #fff;
   cursor: pointer;
@@ -349,6 +382,7 @@ input[type='submit'] {
 
 input[type='submit']:hover {
   background-color: #F0EEEF;
-  box-shadow: 2px 2px 2px #888888; }
+  box-shadow: 2px 2px 2px #888888;
+  /*border-bottom: 10px solid #000;*/ }
 
 /*# sourceMappingURL=main.css.map */

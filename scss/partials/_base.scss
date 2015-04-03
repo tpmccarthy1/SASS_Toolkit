@@ -9,32 +9,22 @@
 }
 
 
-//Common Variables
+//Font Variables
 
+$base-font: helvetica;
 $base-font-size: 1em;
-$left-padding: 5px;
+$base-font-color: #000;
+$h1-font-size: 3em;
+$h2-font-size: 2em;
+$h3-font-size: 1.5em;
+$h1-padding: .25em 0em .25em .25em;
+
 
 
 //Color Variables
 
 $bg: #F0EEEF;
 $wrapper-bg: #fff;
-
-//Grid Variables
-
-$grid-padding: 10px 0px 10px 0px;
-$grid-margin: 0 auto;
-$border-color: #000;
-$border-thick: 2px;
-$border-style: solid;
-$box-margin: 0 0 0 10px; 
-
-//Nav Variables
-
-$nav-font-size: 1.25em;
-$nav-padding: 10px 0 5px 0;
-$nav-li-padding: 5px;
-$nav-margin: 10px;
 
 //Margin & Padding Reset
 
@@ -50,7 +40,7 @@ $nav-margin: 10px;
 
 .clear {clear:both;}
 
-//link behaviors
+//links
 
 a:link{
   text-decoration: none;
@@ -100,26 +90,23 @@ a:visited{
 }
 
 
-
 //Body
 
 body{
 	background-color: $bg;
-	font-family: helvetica;
+	font-family: $base-font;
 	font-size: $base-font-size;
 
 		h1{
-			font-size: $base-font-size*2;
-			padding-left: $left-padding;
-			padding: 5px  5px 5px;
+			font-size: $h1-font-size;
 		}
+
 		h2{
-			@extend h1;
-			font-size: $base-font-size*1.5;
+			font-size: $h2-font-size;
 		}
 		h3{
-			@extend h1;
-			font-size: $base-font-size*1.25;
+
+			font-size: $h3-font-size;
 			
 		}
 }
@@ -127,10 +114,26 @@ body{
 //Wrapper
 
 .wrapper{
-	background-color: $wrapper-bg;
+	background: linear-gradient(#F0EEEF, #fff);
 	margin: 0 auto 0;
-	width: 90%;
+	width: 100%;
+	@media all and (min-width: 481px){
+		background-color: $wrapper-bg;
+		margin: 0 auto 0;
+		width: 98%;
+	}
 }
+
+//Banner Image
+
+.banner{
+	margin: 1em 0 1em 0;
+	background: transparent url('../imgs/bannerroad1.png') 0 no-repeat fixed;
+	background-size: cover;
+	max-width: 100%;
+	height: 25.000em;
+	}
+
 
 
 

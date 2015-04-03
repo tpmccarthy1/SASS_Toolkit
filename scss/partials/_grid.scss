@@ -1,16 +1,22 @@
 @import 'base';
 
+//grid variables
 
-.column-grid{
+$grid-padding: 0;
+$grid-margin: 0 auto;
+$border-color: #000;
+$border-thick: 0px;
+$border-style: solid;
+$box-margin: 1em 0 0 1em; 
+
+
+.grid-container{
 	width: 100%;
-	background-color: $wrapper-bg;
-		
+	
 		@media all and (min-width: 481px){
 		padding: $grid-padding;
-		width: 100%;
-		margin: 0 auto;
-		float: left;
-		background-color: $wrapper-bg;
+		width: 95%;
+		margin: $grid-margin;
 		
 		}
 }
@@ -19,19 +25,25 @@
 .box{
 	width: 100%;
 	float: left;
-	border: $border-color $border-style $border-thick;
-	@include linear-gradient(#F0EEEF, #fff);
+	border-bottom: $border-color $border-style $border-thick;
+	background-color: $bg;
+	margin-bottom: .5em;
+
+	p{
+		padding: 1em;
+	}
 
 		@media all and (min-width: 481px){
 		display: block;
-		width: 31%;
+		width: 30%;
 		float: left;
 		margin: $box-margin;
+		border: $border-color $border-style $border-thick;
 			
 		}
 
 		p{
-			padding: 3px;
+			padding: .5em;
 		}
 }
 
@@ -40,20 +52,26 @@
 
 .form-box{
 	@extend .box;
-	width: 63.3%;
+	width: 100%;
 	@include linear-gradient(#F0EEEF, #fff);
-
+		@media all and (min-width: 481px){
+			width: 61.5%;
+		}
 
 }
 
 .sidebar{
 	@extend .box;
-	width: 31%;
+	width: 100%;
 	@include linear-gradient(#F0EEEF, #fff);
 	div{
 		float: left;
 		margin: 1em;
 	}
+		@media all and (min-width: 481px){
+			width: 30.1%;
+		}
+
 
 }
 
