@@ -68,25 +68,46 @@ body {
       width: 98%; } }
 
 .banner {
-  margin: 1em 0 1em 0;
-  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
-  background-size: cover;
-  max-width: 100%;
-  height: 25.000em; }
+  display: none; }
+  @media all and (min-width: 481px) {
+    .banner {
+      display: block;
+      margin: 1em 0 1em 0;
+      background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+      background-size: cover;
+      max-width: 100%;
+      height: 25.000em; } }
+
+.header {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (min-width: 481px) {
+    .header {
+      font-size: 10em;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 200; } }
 
 nav {
   padding: 1em 0 0.5em 0; }
-  nav ul {
-    display: table;
-    line-height: 1em;
-    width: 100%;
-    font-size: 1.25em;
-    padding: 1em 0 0.5em 0; }
+  @media all and (min-width: 481px) {
+    nav ul {
+      display: table;
+      line-height: 1em;
+      width: 100%;
+      font-size: 1.25em;
+      padding: 1em 0 0.5em 0; } }
   nav li {
-    display: table-cell;
-    width: 16.666667%;
     text-align: center;
-    white-space: nowrap; }
+    padding-bottom: 1em;
+    font-size: 1.5em; }
+    @media all and (min-width: 481px) {
+      nav li {
+        display: table-cell;
+        width: 16.666667%;
+        text-align: center;
+        white-space: nowrap; } }
 
 * {
   margin: 0;
@@ -158,11 +179,26 @@ body {
       width: 98%; } }
 
 .banner {
-  margin: 1em 0 1em 0;
-  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
-  background-size: cover;
-  max-width: 100%;
-  height: 25.000em; }
+  display: none; }
+  @media all and (min-width: 481px) {
+    .banner {
+      display: block;
+      margin: 1em 0 1em 0;
+      background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+      background-size: cover;
+      max-width: 100%;
+      height: 25.000em; } }
+
+.header {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (min-width: 481px) {
+    .header {
+      font-size: 10em;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 200; } }
 
 .grid-container {
   width: 100%; }
@@ -283,11 +319,26 @@ body {
       width: 98%; } }
 
 .banner {
-  margin: 1em 0 1em 0;
-  background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
-  background-size: cover;
-  max-width: 100%;
-  height: 25.000em; }
+  display: none; }
+  @media all and (min-width: 481px) {
+    .banner {
+      display: block;
+      margin: 1em 0 1em 0;
+      background: transparent url("../imgs/bannerroad1.png") 0 no-repeat fixed;
+      background-size: cover;
+      max-width: 100%;
+      height: 25.000em; } }
+
+.header {
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center; }
+  @media all and (min-width: 481px) {
+    .header {
+      font-size: 10em;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 200; } }
 
 .rounded-border, form, input[type='text'], fieldset, .styled-select, select, input[type='checkbox'] {
   border-radius: .5em;
@@ -384,5 +435,18 @@ input[type='submit']:hover {
   background-color: #F0EEEF;
   box-shadow: 2px 2px 2px #888888;
   /*border-bottom: 10px solid #000;*/ }
+
+.footer-wrapper, .footer-top, .footer-bottom {
+  width: 100%;
+  height: 10em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
+.footer-top {
+  background: #F0EEEF;
+  height: 5em; }
+
+.footer-bottom {
+  background: #AACBDA; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.footer-wrapper {
+  width: 100%;
+  height: 10em;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.footer-top{
+	@extend .footer-wrapper;
+	background: $bg;
+	height: 5em;
+}
+
+.footer-bottom{
+	@extend .footer-wrapper;
+	background: #AACBDA
+}

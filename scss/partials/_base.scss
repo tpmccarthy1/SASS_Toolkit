@@ -114,7 +114,7 @@ body{
 //Wrapper
 
 .wrapper{
-	background: linear-gradient(#F0EEEF, #fff);
+	background: linear-gradient(#F0EEEF, #fff); //Linear Gradient Background
 	margin: 0 auto 0;
 	width: 100%;
 	@media all and (min-width: 481px){
@@ -127,12 +127,34 @@ body{
 //Banner Image
 
 .banner{
+
+	display: none;
+
+	@media all and (min-width: 481px){
+	display: block;
 	margin: 1em 0 1em 0;
 	background: transparent url('../imgs/bannerroad1.png') 0 no-repeat fixed;
 	background-size: cover;
 	max-width: 100%;
 	height: 25.000em;
 	}
+	}
+
+//Large Header Text
+
+.header{
+
+	font-size: $h1-font-size;
+	text-transform: uppercase;
+	text-align: center;
+	
+	@media all and (min-width: 481px){
+	font-size: 10em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 200;
+	}
+}
 
 
 

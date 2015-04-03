@@ -13,18 +13,28 @@ nav{
 
 
 	ul{
+		
+
+		@media all and (min-width: 481px){
 		display: table;
 		line-height: 1em;
 		width: 100%;
 		font-size: $nav-font-size;
 		padding: $nav-padding;
+		}
 
 		}
 
 	li{
+		text-align: center;
+		padding-bottom: 1em;
+		font-size: 1.5em;
+
+		@media all and (min-width: 481px){
 		display: table-cell;
 		width: 16.666667%;
 		text-align: center;
 		white-space: nowrap;
+	}
 		}
 	}
